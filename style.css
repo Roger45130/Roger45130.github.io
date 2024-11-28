@@ -1,0 +1,528 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+html, body {
+    background-color: #4A1507;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1440px;
+    margin: 20px auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+}
+
+.title__h1 {
+    font-family: "Inspiration", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    width: 97.8%;
+    height: auto;
+    background-color: #440B02;
+    border-radius: 0.5rem;
+}
+
+.primary__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.list__item {
+    padding: 0.5rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.link {
+    border-left: 1px solid #6E4220;
+    padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+}
+
+.nav__link:hover {
+    color: #ED3D00;
+    background-color: #401B0D;
+}
+
+.burgerIcon {
+    margin-left: 20px; /* Espacement pour séparer de la liste */
+}
+
+.icon__burger {
+    display: none; /* Masqué par défaut pour les écrans larges */
+    padding: 0.5rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.pageGenerale {
+    width: 100%;
+    background-color: #78A899;
+    margin-bottom: 0;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.gridEntete {
+    display: grid;
+    grid-template-columns: 25% auto;
+    width: 100%;
+    background-color: #78A899;
+    gap:0.5rem;
+    position: relative;
+    z-index: 100;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bannerGeneral {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.imageBanniere {
+    padding: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #78A899;
+    width: 95%;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+.subtitle__h2 {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.presentation {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: justify;
+    width: 100%;
+}
+
+.menuGalerie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    width: 95%;
+}
+
+.second__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+    padding: 1.5rem;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: auto;
+}
+
+.secondList__item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.secondList__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+.nav__linkGalery {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.galeryPaint {
+    background-color: #DDD9C6;
+    width: auto;
+    height: 100%;
+    z-index: 1; /* Définit en premier plan */
+    position: relative;
+}
+
+.animation {
+    z-index: 0;
+    position: relative;
+}
+
+.subtitle__h2_Paint {
+    color: #435D63;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 20px;
+    padding: 10px;
+}
+
+.naissanceDeces {
+    display: inline-block;
+    color: #435D63;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0 20px;
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.gridTableaux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 40px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.tableau {
+    position: relative;
+    width: 30%;
+}
+
+.galeryImage {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tableLabel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #020202;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.75rem;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Animation pour les rebonds */
+
+@keyframes fall-bounce {
+    0% {
+        transform: translateY(-900px);
+        z-index: 5;
+    }
+    70% {
+        transform: translateY(-30);
+    }
+    80% {
+        transform: translateY(-50px);
+    }
+    90% {
+        transform: translateY(-20);
+    }
+    95% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        z-index: 10;
+    }
+}
+
+.subtitle__h2_Paint.bounce-fall,
+.naissanceDeces.bounce-fall,
+.gridTableaux.bounce-fall {
+    animation: fall-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.galeryImage {
+    width: 100%;
+    height: auto;
+}
+
+.tableLabel {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.copyright {
+    padding-top: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4A1507;
+}
+
+.icon {
+    padding-right: 1rem;
+}
+
+/* Media query pour les écrans de moins de 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+
+    .nav {
+        max-width: 95%;
+    }
+
+    .link__left {
+        padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+    }
+
+    .link {
+        border-left: none;
+        padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .primary__list {
+        display: none;
+    }
+
+    .primary__list.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    .pageGenerale {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        background-color: #78A899 !important;
+        position: relative;
+        z-index: 100;
+        overflow-x: hidden;
+    }
+
+    .gridEntete {
+        grid-template-columns: 1fr;
+        width: auto;
+        height: 100%;
+        gap: 0;
+        background-color: #78A899 !important;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .bannerGeneral {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .imageBanniere {
+        background-color: #78A899 !important;
+        display: none;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .description {
+        background-color: #78A899 !important;
+        width: auto;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+
+    .subtitle__h2 {
+        width: auto;
+        background-color: #78A899 !important;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    .presentation {
+        width: auto;
+        height: 100%;
+        background-color: #78A899 !important;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+        padding-bottom: 0;
+        
+    }
+
+    .menuGalerie {
+        padding-top: 0;
+        width: auto;
+        height: 100%;
+        background-color: #78A899 !important;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+        width: auto;
+    }
+
+    .second__list {
+        width: 100%;
+        background-color: #78A899 !important;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .secondList__item {
+        width: 100;
+        background-color: #78A899 !important;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .secondList__item::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #FFFFFF;
+    }
+
+    .menuGalerie {
+        width: auto;
+        flex-direction: column;
+        background-color: #78A899 !important;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .animation {
+        z-index: 0;
+        position: relative;
+    }
+
+    .galeryPaint {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .subtitle__h2_Paint {
+        font-size: 2rem;
+        padding-left: 10px;
+        margin: 10px 0;
+    }
+
+    .naissanceDeces {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .gridTableaux {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+        padding: 10px;
+    }
+    
+    .tableau {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        position: relative;
+        width: calc(100% - 20px);
+        height: auto;
+        border-radius: 5px 5px 5px 5px; 
+        gap: 10px;
+    }
+    
+    .tableLabel {
+        position: absolute; 
+        bottom: 0; 
+        left: 0;
+        width: calc(100% - 20px); 
+        background-color: #020202; 
+        color: #FFFFFF; 
+        text-align: center; 
+        font-size: 0.75rem; 
+        border-radius: 0 5px 0 5px;
+    }
+    
+    .copyright {
+        background-color: #4A1507;
+        color: #FFFFFF;
+        font-size: 0.85rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+}
