@@ -102,7 +102,6 @@ html, body {
     grid-template-columns: 25% auto;
     width: 100%;
     background-color: #78A899;
-    gap:0.5rem;
     position: relative;
     z-index: 100;
     overflow-x: hidden;
@@ -401,6 +400,7 @@ html, body {
     .subtitle__h2 {
         width: auto;
         background-color: #78A899 !important;
+        font-size: 1.75rem;
         position: relative;
         z-index: 100;
         overflow: hidden;
