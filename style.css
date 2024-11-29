@@ -230,16 +230,19 @@ html, body {
 .gridTableaux {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 40px;
     margin: 20px;
     padding: 20px;
+    padding-bottom: 40px;
+    flex-direction: row;
+    align-content: space-around;
 }
 
 .tableau {
     position: relative;
-    width: 30%;
+    width: auto;
+    height: auto;
 }
 
 .galeryImage {
