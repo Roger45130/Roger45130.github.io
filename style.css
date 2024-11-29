@@ -326,10 +326,12 @@ html, body {
 
     .logo {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         text-align: center;
         align-items: center;
-        width: 50%;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
     
     .title__h1 {
@@ -342,7 +344,7 @@ html, body {
     }
 
     .nav {
-        width: auto;
+        width: 100%;
     }
 
     .link__left {
