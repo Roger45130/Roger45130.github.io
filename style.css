@@ -351,7 +351,7 @@ html, body {
     }
 
     .nav {
-        max-width: 95%;
+        width: auto;
     }
 
     .link__left {
