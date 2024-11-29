@@ -230,13 +230,14 @@ html, body {
 .gridTableaux {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
     align-items: flex-start;
     gap: 40px;
     margin: 20px;
     padding: 20px;
     padding-bottom: 40px;
-    flex-direction: row;
-    align-content: space-around;
 }
 
 .tableau {
@@ -245,8 +246,8 @@ html, body {
     height: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .galeryImage {
@@ -298,16 +299,6 @@ html, body {
 .naissanceDeces.bounce-fall,
 .gridTableaux.bounce-fall {
     animation: fall-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-.galeryImage {
-    width: 100%;
-    height: auto;
-}
-
-.tableLabel {
-    font-size: 14px;
-    margin-top: 8px;
 }
 
 .copyright {
@@ -529,8 +520,8 @@ html, body {
         height: auto;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         gap: 10px;
     }
     
