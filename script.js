@@ -20,7 +20,7 @@ const peintres = {
       { src: "Assets/Images/PabloPicasso/Demoiselles_Avignon.png", label: "Les Demoiselles d'Avignon, 1907" },
       { src: "Assets/Images/PabloPicasso/Femme_qui_pleure.png", label: "Femme qui pleure, 1937" },
       { src: "Assets/Images/PabloPicasso/guernica.png", label: "Guernica, 1937" },
-      { src: "Assets/Images/PabloPicasso/Le_peintre_et_son_modele.png", label: "Le Peintre et son Modèle, 1963" },
+      { src: "Assets/Images/PabloPicasso/Le_Peintre_et_son_Modele.png", label: "Le Peintre et son Modèle, 1963" },
       { src: "Assets/Images/PabloPicasso/Marie_Therese.png", label: "Marie-Thérèse, 1932" },
     ],
   },
@@ -49,8 +49,8 @@ const peintres = {
     dates: "(31 Octobre 1632 - 15 Décembre 1675)",
     tableaux: [
       { src: "Assets/Images/JohannesVermeer/fille_a_la-perle.png", label: "Fille à la perle, 1665" },
-      { src: "Assets/Images/JohannesVermeer/La_laitière.png", label: "La laitière, 1658" },
-      { src: "Assets/Images/JohannesVermeer/La_liseuse_à_la_fenêtre.png", label: "La liseuse à la fenêtre, 1657" },
+      { src: "Assets/Images/JohannesVermeer/La_Laitière.png", label: "La laitière, 1658" },
+      { src: "Assets/Images/JohannesVermeer/La_Liseuse_à_la_fenêtre.png", label: "La liseuse à la fenêtre, 1657" },
     ],
   },
   Van_Gogh: {
@@ -59,7 +59,7 @@ const peintres = {
       { src: "Assets/Images/VincentVanGogh/Campagne_Montagneuse-1889.jpg", label: "Campagne Montagneuse, 1889" },
       { src: "Assets/Images/VincentVanGogh/La_Chambre_de_van_gogh-1889.png", label: "La chambre de Van Gogh, 1889" },
       { src: "Assets/Images/VincentVanGogh/La_nuit_Etoilee-1889.png", label: "La nuit étoilée, 1889" },
-      { src: "Assets/Images/VincentVanGogh/La_sieste.png", label: "La sieste, 1890" },
+      { src: "Assets/Images/VincentVanGogh/La_Sieste.png", label: "La sieste, 1890" },
       { src: "Assets/Images/VincentVanGogh/Les_Iris-1889.png", label: "Les iris, 1889" },
       { src: "Assets/Images/VincentVanGogh/Terrasse_café.png", label: "Terrasse de café, 1888" },
     ],
