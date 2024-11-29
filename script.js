@@ -56,7 +56,7 @@ const peintres = {
   Van_Gogh: {
     dates: "(30 Mars 1853 - 29 Juillet 1890)",
     tableaux: [
-      { src: "Assets/Images/VincentVanGogh/Campagne_Montagneuse-1889.jpg", label: "Campagne Montagneuse, 1889" },
+      { src: "Assets/Images/VincentVanGogh/Campagne_Montagneuse-1889.png", label: "Campagne Montagneuse, 1889" },
       { src: "Assets/Images/VincentVanGogh/La_Chambre_de_van_gogh-1889.png", label: "La chambre de Van Gogh, 1889" },
       { src: "Assets/Images/VincentVanGogh/La_nuit_Etoilee-1889.png", label: "La nuit étoilée, 1889" },
       { src: "Assets/Images/VincentVanGogh/La_Sieste.png", label: "La sieste, 1890" },

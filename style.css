@@ -141,7 +141,7 @@ html, body {
 .presentation {
     color: #FFFFFF;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1rem;
     text-align: justify;
     width: 100%;
