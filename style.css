@@ -303,7 +303,7 @@ html, body {
     top: 50px;
     right: 100px;
     font-size: 3rem;
-    color: #FFFFFF;
+    color: #4A1507;
     font-weight: bold;
     cursor: pointer;
     text-shadow: 10px 6px 6px rgba(255,0,0,0.66);
@@ -322,7 +322,7 @@ html, body {
 .modal-navigation .prev,
 .modal-navigation .next {
     font-size: 3rem;
-    color: #FFFFFF;
+    color: #4A1507;
     cursor: pointer;
     padding: 10px;
     transition: color 0.8s ease;
@@ -635,7 +635,7 @@ html, body {
         top: 20px; /* Toujours 20px depuis le haut */
         right: 20px; /* Toujours 20px depuis la droite */
         font-size: 2rem; /* Taille adaptée pour les petits écrans */
-        color: #FFFFFF;
+        color: #4A1507;
         cursor: pointer;
         font-weight: bold;
         text-shadow: 10px 6px 6px rgba(255,0,0,0.66);
@@ -654,7 +654,7 @@ html, body {
     .modal-navigation .prev,
     .modal-navigation .next {
         font-size: 2rem; /* Taille des flèches adaptée pour les petits écrans */
-        color: #FFFFFF;
+        color: #4A1507;
         cursor: pointer;
     }
 
