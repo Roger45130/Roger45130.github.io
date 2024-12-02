@@ -306,6 +306,7 @@ html, body {
     color: #FFFFFF;
     font-weight: bold;
     cursor: pointer;
+    text-shadow: 10px 6px 6px rgba(255,0,0,0.66);
 }
 
 .modal-navigation {
@@ -325,6 +326,14 @@ html, body {
     cursor: pointer;
     padding: 10px;
     transition: color 0.8s ease;
+}
+
+.modal-navigation .prev {
+    text-shadow: 12px 4px 6px rgba(255, 208, 0, 0.48);
+}
+
+.modal-navigation .next {
+    text-shadow: -12px 4px 6px rgba(255, 208, 0, 0.48);
 }
 
 .modal-navigation .prev:hover,
@@ -629,6 +638,7 @@ html, body {
         color: #FFFFFF;
         cursor: pointer;
         font-weight: bold;
+        text-shadow: 10px 6px 6px rgba(255,0,0,0.66);
     }
 
     .modal-navigation {
@@ -646,6 +656,14 @@ html, body {
         font-size: 2rem; /* Taille des flèches adaptée pour les petits écrans */
         color: #FFFFFF;
         cursor: pointer;
+    }
+
+    .modal-navigation .prev {
+        text-shadow: 12px 4px 6px rgba(255, 208, 0, 0.48);
+    }
+    
+    .modal-navigation .next {
+        text-shadow: -12px 4px 6px rgba(255, 208, 0, 0.48);
     }
 
     .modal-navigation .prev {
