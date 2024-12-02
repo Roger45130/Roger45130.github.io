@@ -616,7 +616,7 @@ html, body {
     .modal-content {
         max-width: 90%; /* L'image prend 90% de la largeur de l'écran */
         max-height: 90%; /* L'image prend 90% de la hauteur de l'écran */
-        transform: scale(1); /* Pas d'agrandissement supplémentaire pour les petits écrans */
+        transform: scale(1.5); /* Pas d'agrandissement supplémentaire pour les petits écrans */
         margin: auto; /* Centre automatiquement l'image */
         transition: transform 3.5s ease; /* Transition douce */
     }
@@ -628,6 +628,7 @@ html, body {
         font-size: 2rem; /* Taille adaptée pour les petits écrans */
         color: #FFFFFF;
         cursor: pointer;
+        font-weight: bold;
     }
 
     .modal-navigation {
