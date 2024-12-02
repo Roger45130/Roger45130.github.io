@@ -6,6 +6,11 @@ const galeryPaint = document.querySelector(".galeryPaint");
 const burgerIcon = document.querySelector(".icon__burger");
 const primaryList = document.querySelector(".primary__list");
 
+// Création dynamique de l'élément <span class="naissanceDeces">
+const NaissanceDeces = document.createElement("span");
+const naissanceDeces = document.querySelector(".naissanceDeces");
+naissanceDeces.classList.add("naissanceDeces");
+
 // Éléments pour la fenêtre modale
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modalImage");
@@ -82,11 +87,26 @@ const peintres = {
   },
 };
 
-// Fonction pour charger les oeuvres par défaut (Picasso).
+// Fonction pour charger les œuvres par défaut (Picasso).
 function loadDefaultPainter() {
-  currentPainter = "Picasso"; //  peintre par défaut à l'ouverture de la page
-  subtitlePaint.textContent = `Galerie ${currentPainter}`; // insrit "Galerie " et y ajoute le nom du peintre sélectionné
-  updateGallery(peintres[currentPainter].tableaux);
+  const defaultPainter = "Picasso";
+  subtitlePaint.textContent = `Galerie ${defaultPainter}`;
+  naissanceDeces.textContent = peintres[defaultPainter].dates;
+  updateGallery(peintres[defaultPainter].tableaux);
+  applyBounceAnimation();
+}
+
+// Fonction pour appliquer l'animation de rebond.
+function applyBounceAnimation() {
+  subtitlePaint.classList.add("bounce-fall");
+  naissanceDeces.classList.add("bounce-fall");
+  gridTableaux.classList.add("bounce-fall");
+
+  setTimeout(() => {
+    subtitlePaint.classList.remove("bounce-fall");
+    naissanceDeces.classList.remove("bounce-fall");
+    gridTableaux.classList.remove("bounce-fall");
+  }, 2500);
 }
 
 // Fonction pour mettre à jour la galerie.
@@ -94,12 +114,12 @@ function updateGallery(tableaux) {
   gridTableaux.innerHTML = ""; // Vide la galerie existante.
   tableaux.forEach((tableau, index) => {
     const tableauContainer = document.createElement("div");
-    tableauContainer.classList.add("tableau"); // récupère le tableau
-    tableauContainer.dataset.index = index; //  Détermine l'index (numéro de position) du tableau
+    tableauContainer.classList.add("tableau");
+    tableauContainer.dataset.index = index;
 
     const img = document.createElement("img");
-    img.src = tableau.src; // va chercher dans la liste (Array) le chemin du tableau
-    img.alt = tableau.label; // va chercher dans la liste (Array) le label (étiquette) du tableau
+    img.src = tableau.src;
+    img.alt = tableau.label;
     img.classList.add("galeryImage");
 
     const label = document.createElement("div");
@@ -112,9 +132,9 @@ function updateGallery(tableaux) {
   });
 
   // Ajout des gestionnaires d'événements pour les tableaux
-  const tableauxElements = document.querySelectorAll(".tableau"); //  Sélectionne le tableau du peintre
+  const tableauxElements = document.querySelectorAll(".tableau");
   tableauxElements.forEach((tableau) => {
-    tableau.addEventListener("click", openModal); //  Prend en charge le (class="modal")
+    tableau.addEventListener("click", openModal);
   });
 }
 
@@ -159,7 +179,9 @@ navLinks.forEach((link) => {
     if (peintres[peintreId]) {
       currentPainter = peintreId;
       subtitlePaint.textContent = `Galerie ${peintreId}`.replace(/_/g, " ");
+      naissanceDeces.textContent = peintres[peintreId].dates;
       updateGallery(peintres[peintreId].tableaux);
+      applyBounceAnimation();
     }
   });
 });
