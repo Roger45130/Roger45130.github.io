@@ -65,8 +65,8 @@
           </div>
           <div class="description">
             <h2 class="subtitle__h2">Ce que nous faisons</h2>
-            <span class="presentation"
-              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
+            <span class="presentation">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
               commodi iste? Dolorem beatae id praesentium voluptas deleniti qui
               eaque tenetur repellat inventore alias hic porro ad delectus nemo
               totam ipsam architecto nobis, ipsum dolore veniam ipsa. Beatae
@@ -74,31 +74,23 @@
               Fugiat facilis quidem molestias. Culpa reiciendis hic in at
               aspernatur sapiente id illum recusandae quae quo! Odit asperiores
               deserunt velit saepe quia? Fugiat reprehenderit deleniti
-              consectetur in hic.</span
-            >
+              consectetur in hic.
+            </span>
           </div>
 
           <div class="menuGalerie">
             <div class="second__list">
               <li class="secondList__item">
-                <a href="#" class="nav__linkGalery link__galery"
-                  >Nos Productions</a
-                >
+                <a href="#" class="nav__linkGalery link__galery">Nos Productions</a>
               </li>
               <li class="secondList__item">
-                <a href="#" class="nav__linkGalery link__galery"
-                  >Qui Sommes Nous</a
-                >
+                <a href="#" class="nav__linkGalery link__galery">Qui Sommes Nous</a>
               </li>
               <li class="secondList__item">
-                <a href="#" class="nav__linkGalery link__galery"
-                  >Notre Philosophie</a
-                >
+                <a href="#" class="nav__linkGalery link__galery">Notre Philosophie</a>
               </li>
               <li class="secondList__item">
-                <a href="#" class="nav__linkGalery link__galery"
-                  >Nous Contacter</a
-                >
+                <a href="#" class="nav__linkGalery link__galery">Nous Contacter</a>
               </li>
             </div>
           </div>
@@ -108,7 +100,7 @@
               <h2 class="subtitle__h2_Paint">Galerie Picasso</h2>
               <span class="naissanceDeces">(25 Octobre 1881 - 8 Avril 1973)</span>
               <div class="gridTableaux">
-                <div class="tableau">
+                <div class="tableau" data-index="0">
                   <img
                     src="Assets/Images/PabloPicasso/Autoportrait_Picasso.png"
                     alt="Autoportrait à la palette, 1906"
@@ -116,7 +108,7 @@
                   />
                   <div class="tableLabel">Autoportrait à la palette, 1906</div>
                 </div>
-                <div class="tableau">
+                <div class="tableau" data-index="1">
                   <img
                     src="Assets/Images/PabloPicasso/Demoiselles_Avignon.png"
                     alt="Les Demoiselles d'Avignon, 1907"
@@ -124,7 +116,7 @@
                   />
                   <div class="tableLabel">Les Demoiselles d'Avignon, 1907</div>
                 </div>
-                <div class="tableau">
+                <div class="tableau" data-index="2">
                   <img
                     src="Assets/Images/PabloPicasso/Femme_qui_pleure.png"
                     alt="Femme qui pleure, 1937"
@@ -132,40 +124,26 @@
                   />
                   <div class="tableLabel">Femme qui pleure, 1937</div>
                 </div>
-                <div class="tableau">
-                  <img
-                    src="Assets/Images/PabloPicasso/guernica.png"
-                    alt="Guernica, 1937"
-                    class="galeryImage"
-                  />
-                  <div class="tableLabel">Guernica, 1937</div>
-                </div>
-                <div class="tableau">
-                  <img
-                    src="Assets/Images/PabloPicasso/Le_peintre_et_son_modele.png"
-                    alt="Le Peintre et son Modèle, 1963"
-                    class="galeryImage"
-                  />
-                  <div class="tableLabel">Le Peintre et son Modèle, 1963</div>
-                </div>
-                <div class="tableau">
-                  <img
-                    src="Assets/Images/PabloPicasso/Marie_Therese.png"
-                    alt="Marie-Thérèse, 1932"
-                    class="galeryImage"
-                  />
-                  <div class="tableLabel">Marie-Thérèse, 1932</div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <span class="copyright"
-          ><i class="fa-regular fa-copyright icon"></i>Copyright Art
-          Fabric</span
-        >
+        <span class="copyright">
+          <i class="fa-regular fa-copyright icon"></i>Copyright Art Fabric
+        </span>
       </div>
     </div>
+
+    <!-- Fenêtre modale pour afficher l'image agrandie -->
+    <div id="modal" class="modal hidden">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div class="modal-navigation">
+        <span class="prev">&laquo;</span>
+        <span class="next">&raquo;</span>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
